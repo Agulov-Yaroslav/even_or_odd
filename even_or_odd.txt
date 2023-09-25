@@ -1,0 +1,21 @@
+
+*&---------------------------------------------------------------------*
+*& Report ZEVEN_OR_ODD
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+REPORT zeven_or_odd.
+
+DATA: lv_number TYPE i.
+
+
+PARAMETERS: p_number TYPE i.
+
+lv_number = p_number.
+
+
+IF lv_number MOD 2 = 0.
+  WRITE: lv_number, ' is an even number.'.
+ELSE.
+  WRITE: lv_number, ' is an odd number.'.
+ENDIF.
